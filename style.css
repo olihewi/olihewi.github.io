@@ -1,0 +1,18 @@
+a { text-decoration: none; color: black;}
+a:visited { color: black;}
+a:hover { color: black;}
+a:active { color: black;}
+
+body {
+	margin:0;
+	padding:0;
+	background-color:#F9DC5C;
+}
+
+.titlebar {
+	width:100%;
+	font-family:verdana;
+	font-size:3vw;
+	padding:16px 0px 16px 0px;
+	background-color:#F9DC5C;
+}
