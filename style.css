@@ -16,3 +16,7 @@ body {
 	padding:16px 0px 16px 0px;
 	background-color:#F9DC5C;
 }
+
+.straightline {
+	width:100%; height:3px; background-color:black; margin:-3px 0px 0px 0px;
+}

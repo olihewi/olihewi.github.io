@@ -1,0 +1,109 @@
+<head>
+	<title>Oli Hewison</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="images/favicon.png">
+	<style>
+		a { text-decoration: none; color: #F9D657;}
+		a:visited { color: #F9D657;}
+		a:hover { color: #F9D657;}
+		a:active { color: #F9D657;}
+		
+		#main {
+			display:flex;
+			width:100%;
+			height:100%;
+		}
+		#buttonabout {background-color:#EAC435; order:1;} #buttonabout:hover {background-color:#F3DE90}
+		#buttongames {background-color:#F4845F; order:3;} #buttongames:hover {background-color:#F7A78D}
+		#buttonblog {background-color:#8783D1; order:5;} #buttonblog:hover {background-color:#A8A6DE}
+		#buttonportfolio {background-color:#86BAA1; order:7;} #buttonportfolio:hover {background-color:#B1D2C2}
+		#buttoncontact {background-color:#394053; order:9;} #buttoncontact:hover {background-color:#5B6686}
+		
+		#contentabout {order:2;}
+		#contentgames {order:4;}
+		#contentblog {order:6;}
+		#contentportfolio {order:8;}
+		#contentcontact {order:10;}
+		
+		.sectionbutton {
+			height:100%;
+			width:20%;
+			writing-mode:vertical-rl;
+			cursor:pointer;
+			transition:0.3s;
+		}
+		.sectionbutton:hover {
+		padding:0 1%;
+		}
+		.sectioncontent {
+			width:225%;
+			order:2;
+			display:none;
+		}
+		
+		.sectiontitle {
+			padding:0.5vw;
+			color:#FFFFFF;
+			font-family:"Arial Black", Gadget, sans-serif;
+			font-size:3vw;
+		}
+	</style>
+	<script>
+		function sectionClick(button) {
+			var sections = document.getElementsByClassName("sectioncontent")
+			var contentsection = document.getElementById(button);
+			if (contentsection.style.display != "block")
+			{
+				for (var i=0, max=sections.length; i < max; i++)
+				{
+					sections[i].style.display="none";
+				}
+				contentsection.style.display="block";
+			}
+			else
+			{
+				for (var i=0, max=sections.length; i < max; i++)
+				{
+					sections[i].style.display="none";
+				}
+			}
+		}
+		function hideElement(element, index) {
+			element.style.display="none";
+		}
+	</script>
+</head>
+<body style="background-color:#FFFFFF;">
+<div id="main">
+	<div class="sectionbutton" id="buttonabout" onclick="sectionClick('contentabout')">
+		<div class="sectiontitle">ABOUT</div>
+	</div>
+	<div class="sectioncontent" id="contentabout">
+		about
+	</div>
+	<div class="sectionbutton" id="buttongames" onclick="sectionClick('contentgames')">
+		<div class="sectiontitle">GAMES</div>
+	</div>
+	<div class="sectioncontent" id="contentgames">
+		games
+	</div>
+	<div class="sectionbutton" id="buttonblog" onclick="sectionClick('contentblog')">
+		<div class="sectiontitle">BLOG</div>
+	</div>
+	<div class="sectioncontent" id="contentblog">
+		blog
+	</div>
+	<div class="sectionbutton" id="buttonportfolio" onclick="sectionClick('contentportfolio')">
+		<div class="sectiontitle">PORTFOLIO</div>
+	</div>
+	<div class="sectioncontent" id="contentportfolio">
+		portfolio
+	</div>
+	<div class="sectionbutton" id="buttoncontact" onclick="sectionClick('contentcontact')">
+		<div class="sectiontitle">CONTACT</div>
+	</div>
+	<div class="sectioncontent" id="contentcontact">
+		contact
+	</div>
+</div>
+</body>
