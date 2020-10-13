@@ -3,67 +3,124 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" href="images/favicon.png">
 	<style>
-		a { text-decoration: none; color: black;}
-		a:visited { color: black;}
-		a:hover { color: black;}
-		a:active { color: black;}
+		a { text-decoration: none; color: #F9D657;}
+		a:visited { color: #F9D657;}
+		a:hover { color: #F9D657;}
+		a:active { color: #F9D657;}
+		
+		#main {
+			display:flex;
+			width:100%;
+			height:100%;
+		}
+		#buttonabout {background-color:#EAC435; order:1;} #buttonabout:hover {background-color:#F3DE90}
+		#buttongames {background-color:#F4845F; order:3;} #buttongames:hover {background-color:#F7A78D}
+		#buttonblog {background-color:#8783D1; order:5;} #buttonblog:hover {background-color:#A8A6DE}
+		#buttonportfolio {background-color:#86BAA1; order:7;} #buttonportfolio:hover {background-color:#B1D2C2}
+		#buttoncontact {background-color:#394053; order:9;} #buttoncontact:hover {background-color:#5B6686}
+		
+		#containerabout {order:2;}
+		#containergames {order:4;}
+		#containerblog {order:6;}
+		#containerportfolio {order:8;}
+		#containercontact {order:10;}
+		
+		.sectionbutton {
+			height:100%;
+			width:20%;
+			writing-mode:vertical-rl;
+			cursor:pointer;
+			transition:0.3s;
+		}
+		.sectionbutton:hover {
+		padding:0 1%;
+		}
+		.sectioncontent {
+			width:0;
+			transition:0.3s;
+		}
+		.contentdisplay {
+			width:100%;
+			display:none;
+		}
+		
+		.sectiontitle {
+			padding:0.5vw;
+			color:#FFFFFF;
+			font-family:"Arial Black", Gadget, sans-serif;
+			font-size:3vw;
+		}
 	</style>
-</head>
-<body>
-	<div class="titlebar">C:// <a href="index.html"><b>olihewi</b></a> / <a href="games.html">games</a> / <a href="blog.html">blog</a> / <a href="portfolio.html">portfolio</a> / <a href="contact.html">contact</a></div>
-	<div style="width:100%; height:3px; background-color:black"></div>
-	<div id="vanta" style="min-width:100%;min-height:40vh;">
-	
-	</div>
-	<div class="straightline"></div>
-	<script src="scripts/three.r119.min.js"></script>
-	<script src="scripts/vanta.fog.min.js"></script>
 	<script>
-	VANTA.FOG({
-	  el: "#vanta",
-	  mouseControls: true,
-	  touchControls: true,
-	  gyroControls: false,
-	  minHeight: 200.00,
-	  minWidth: 200.00,
-	  highlightColor: 0xff9500,
-	  midtoneColor: 0xffd40d,
-	  lowlightColor: 0xff5a00,
-	  baseColor: 0xfff087,
-	  blurFactor: 0.10
-	})
+		var currentsectionbutton = -1;
+		function sectionClick(button) {
+			var sections = document.getElementsByClassName("sectioncontent");
+			var textcontents = document.getElementsByClassName("contentdisplay");
+			for (var i=0, max=textcontents.length; i < max; i++)
+			{
+				textcontents[i].style.display="none";
+			}
+			for (var i=0, max=sections.length; i < max; i++)
+			{
+				sections[i].style.width=0;
+			}
+			if (button != currentsectionbutton)
+			{
+				document.getElementById("container"+button).style.width="225%";
+				document.getElementById("content"+button).style.display="block";
+				currentsectionbutton = button;
+			}
+			else
+			{
+				currentsectionbutton = -1;
+			}
+		}
+		function hideElement(element, index) {
+			element.style.display="none";
+		}
 	</script>
-	<div>
-		<table style="width:100%; background-color:#FFDD00; padding: 4px 0px 0px 0px;">
-		<tr>
-			<th width="30%">
-				<img src="images/transparentprofile.png" width="40%">
-			</th>
-			<th width="70%" style="font-family:times; font-size:4vw; padding-right:16px"><i>
-				<script language="JavaScript">
-					<!--
-					var r_text = new Array ();
-					r_text[0] = '"How do you dupe glitch everything so easily" - alex';
-					r_text[1] = '"Oli is just chaotic chaos" - josh';
-					r_text[2] = '"You know that thatch roofing is difficult to maintain?" - me';
-					r_text[3] = '"Everything goes through Oli" - christie';
-					r_text[4] = '"Oli is a very lucky man" - douggie';
-					r_text[5] = '"Swagnam Style" - me';
-					r_text[6] = '"This is an endorsement" - tom';
-					r_text[7] = '"Money can be exchanged for goods and services. Let me be good and service you." - douggie';
-					var i = Math.floor(r_text.length*Math.random());
-
-					document.write(r_text[i]);
-
-					//-->
-				</script>
-			</i></th>
-		</tr>
-		</table>
+</head>
+<body style="background-color:#FFFFFF;">
+<div id="main">
+	<div class="sectionbutton" id="buttonabout" onclick="sectionClick('about')">
+		<div class="sectiontitle">ABOUT</div>
 	</div>
-	<div style="width:100%; height:3px; background-color:black; margin:-3px 0px 0px 0px;"></div>
-	<div style="width=100%; height:500px; padding:5px;">
-		<h1><i>Oliver Hewison.</h1>
-		“Some say that his tears are adhesive, and that if he caught fire he’d burn for 1000 days. All we know is he’s called the Stig.”</i>
+	<div class="sectioncontent" id="containerabout">
+		<div class="contentdisplay" id="contentabout">
+			about
+		</div>
 	</div>
+	<div class="sectionbutton" id="buttongames" onclick="sectionClick('games')">
+		<div class="sectiontitle">GAMES</div>
+	</div>
+	<div class="sectioncontent" id="containergames">
+		<div class="contentdisplay" id="contentgames">
+			games
+		</div>
+	</div>
+	<div class="sectionbutton" id="buttonblog" onclick="sectionClick('blog')">
+		<div class="sectiontitle">BLOG</div>
+	</div>
+	<div class="sectioncontent" id="containerblog">
+		<div class="contentdisplay" id="contentblog">
+			blog
+		</div>
+	</div>
+	<div class="sectionbutton" id="buttonportfolio" onclick="sectionClick('portfolio')">
+		<div class="sectiontitle">PORTFOLIO</div>
+	</div>
+	<div class="sectioncontent" id="containerportfolio">
+		<div class="contentdisplay" id="contentportfolio">
+			portfolio
+		</div>
+	</div>
+	<div class="sectionbutton" id="buttoncontact" onclick="sectionClick('contact')">
+		<div class="sectiontitle">CONTACT</div>
+	</div>
+	<div class="sectioncontent" id="containercontact">
+		<div class="contentdisplay" id="contentcontact">
+			contact
+		</div>
+	</div>
+</div>
 </body>
