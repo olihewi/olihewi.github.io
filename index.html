@@ -46,13 +46,14 @@
 		.contentdisplay {
 			width:100%;
 			display:block;
+			transition:0.5s;
 		}
 		
 		.sectiontitle {
 			padding:0.5vw;
 			color:#FFFFFF;
 			font-family:"Arial Black", Gadget, sans-serif;
-			font-size:64px;
+			font-size:72px;
 		}
 		
 		#contacttitle {
@@ -95,24 +96,20 @@
 		var currentsectionbutton = -1;
 		function sectionClick(button) {
 			var sections = document.getElementsByClassName("sectioncontent");
+			var contents = document.getElementsByClassName("contentdisplay");
+			var sectionWidth = button == 'games' ? "1000px" : button == 'contact' ? "52%" : "225%";
 			for (var i=0, max=sections.length; i < max; i++)
 			{
 				sections[i].style.width=0;
 			}
+			for (var i=0, max=contents.length; i < max; i++)
+			{
+				contents[i].style.opacity = 0;
+			}
 			if (button != currentsectionbutton)
 			{
-				if (button == 'contact')
-				{
-					document.getElementById("container"+button).style.width="52%";
-				}
-				else if (button == 'games')
-				{
-					document.getElementById("container"+button).style.width="1000px";
-				}
-				else
-				{
-					document.getElementById("container"+button).style.width="225%";
-				}
+				document.getElementById("container"+button).style.width=sectionWidth;
+				document.getElementById("content"+button).style.opacity=1;
 				currentsectionbutton = button;
 			}
 			else
@@ -150,7 +147,7 @@
 		<div class="sectiontitle">GAMES</div>
 	</div>
 	<div class="sectioncontent" id="containergames">
-		<div class="contentdisplay" id="contentgames" style="padding:2.5%">
+		<div class="contentdisplay" id="contentgames" style="padding:10px">
 			<iframe frameborder="0" src="https://itch.io/embed/560757?linkback=true&amp;border_color=F4845F;border_width=1&amp" width="95%" height="167"><a href="https://olihewi.itch.io/flynn-starchad">Flynn Starchad by olihewi</a></iframe><br>
 			<iframe frameborder="0" src="https://itch.io/embed/299522?linkback=true&amp;border_color=F4845F;border_width=1&amp" width="95%" height="167"><a href="https://olihewi.itch.io/a-boy-and-his-torch">A Boy and his Torch by olihewi</a></iframe>
 		</div>
