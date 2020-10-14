@@ -91,13 +91,35 @@
 			margin:1vw;
 			display:flex;
 		}
+		.blogpost {
+			margin: 0 16;
+		}
+		.postheader {
+			padding:8px;
+			color: white;
+			background-color: #8783D1;
+		}
+		.posttitle {
+			display:inline;
+			font-family: Tahoma, Geneva, sans-serif;
+			font-size: 48px;
+		}
+		.postdate {
+			display:inline;
+			font-family: Tahoma, Geneva, sans-serif;
+			margin-left:20px;
+		}
+		.postcontent {
+			font-family: Tahoma, Geneva, sans-serif;
+			margin-left:8px;
+		}
 	</style>
 	<script>
 		var currentsectionbutton = -1;
 		function sectionClick(button) {
 			var sections = document.getElementsByClassName("sectioncontent");
 			var contents = document.getElementsByClassName("contentdisplay");
-			var sectionWidth = button == 'games' ? "1000px" : button == 'contact' ? "52%" : "225%";
+			var sectionWidth = button == 'games' ? "1000" : button == 'blog' ? "1500" : button == 'contact' ? "52%" : "150%";
 			for (var i=0, max=sections.length; i < max; i++)
 			{
 				sections[i].style.width=0;
@@ -157,7 +179,33 @@
 	</div>
 	<div class="sectioncontent" id="containerblog">
 		<div class="contentdisplay" id="contentblog">
-			blog
+			<div class="blogpost">
+				<div class="postheader">
+					<h3 class="posttitle">The Beginning</h3>
+					<div class="postdate">October 14th, 2020</div>
+				</div>
+				<p class="postcontent">
+					It's 7:41pm on a Wednesday right now and here I am, writing a blog post on my new website. 
+					This is mostly just a placeholder post to decide on layout and formatting for future blog posts, 
+					but I think I'll keep it here and use this opportunity to write about what I'm up to right now 
+					- after all, isn't that what a blog is for?<br><br>
+					This is me testing <i>italics</i>, <b>bold text</b> and <u>underlined text</u> with font I'm using.
+					That's Tahoma. I just decided that.<br><br>
+					I've been having a lot of fun making this website. I started making it on the 7th of October, but
+					I just decided on this new style yesterday, using some funky flexboxes and a bunch of colours, 
+					so I've pretty much restarted - not that I had much here beforehand. I hope you like it!<br><br>
+					I opted to be a bit stingy and not use templates or WordPress - web dev can't be that hard to learn, 
+					can it? I did a bit of it years back and it wasn't that hard to pick back up. That does mean that I'll
+					have to write my blog posts into here myself, but maybe I'll make something in JavaScript to make it 
+					easier for me at some point. This is also my first time ever using JavaScript, but it's pretty similar 
+					to everything else. I'm only using it for the button-tab thingies and some hover stuff but maybe one 
+					day I'll add a little easter egg into my website here and there.<br><br>
+					I start with my course content next monday, and I'll be blogging everything I do with my projects 
+					right here. By the end of this week I'd like to be finished with this website, and I'll hopefully make 
+					something in JavaScript that lets you sort through all of these blog posts by topic. It'd be a pain 
+					to go through all of my posts individually, especially if i do end up posting updates regularly.
+				</p>
+			</div>
 		</div>
 	</div>
 	<div class="sectionbutton" id="buttonportfolio" onclick="sectionClick('portfolio')">
