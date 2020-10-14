@@ -37,7 +37,8 @@
 		}
 		.sectioncontent {
 			width:0;
-			transition:0.3s;
+			overflow:scroll;
+			transition:0.5s;
 		}
 		.contentdisplay {
 			width:100%;
@@ -66,7 +67,14 @@
 			}
 			if (button != currentsectionbutton)
 			{
-				document.getElementById("container"+button).style.width="225%";
+				if (button == 'contact')
+				{
+					document.getElementById("container"+button).style.width="75%";
+				}
+				else
+				{
+					document.getElementById("container"+button).style.width="225%";
+				}
 				document.getElementById("content"+button).style.display="block";
 				currentsectionbutton = button;
 			}
@@ -75,13 +83,11 @@
 				currentsectionbutton = -1;
 			}
 		}
-		function hideElement(element, index) {
-			element.style.display="none";
-		}
 	</script>
 </head>
 <body style="background-color:#FFFFFF;">
 <div id="main">
+	<div style="width:1; margin-left:-2"></div>
 	<div class="sectionbutton" id="buttonabout" onclick="sectionClick('about')">
 		<div class="sectiontitle">ABOUT</div>
 	</div>
