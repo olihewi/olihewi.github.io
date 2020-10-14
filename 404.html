@@ -1,0 +1,181 @@
+<head>
+	<meta charset="UTF-8">
+	<title>Oliver Hewison - Hello!</title>
+	<meta name="description" content="Game Developer and Programmer - This is my website!">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="images/favicon.png">
+	<style>
+		a { text-decoration: none; color: inherit;}
+		a:visited { color: inherit;}
+		a:hover { color: inherit;}
+		a:active { color: inherit;}
+		
+		#main {
+			display:flex;
+			width:100%;
+			height:100%;
+		}
+		#buttonabout {background-color:#EAC435; order:1;} #buttonabout:hover {background-color:#F3DE90}
+		#buttongames {background-color:#F4845F; order:3;} #buttongames:hover {background-color:#F7A78D}
+		#buttonblog {background-color:#8783D1; order:5;} #buttonblog:hover {background-color:#A8A6DE}
+		#buttonportfolio {background-color:#86BAA1; order:7;} #buttonportfolio:hover {background-color:#B1D2C2}
+		#buttoncontact {background-color:#394053; order:9;} #buttoncontact:hover {background-color:#5B6686}
+		
+		#containerabout {order:2;}
+		#containergames {order:4;}
+		#containerblog {order:6;}
+		#containerportfolio {order:8;}
+		#containercontact {order:10;}
+		
+		.sectionbutton {
+			height:100%;
+			width:20%;
+			writing-mode:vertical-rl;
+			cursor:pointer;
+			transition:0.3s;
+		}
+		.sectionbutton:hover {
+		padding:0 1%;
+		}
+		.sectioncontent {
+			width:0;
+			overflow-x:hidden;
+			overflow-y:auto;
+			transition:0.5s;
+		}
+		.contentdisplay {
+			width:100%;
+			display:block;
+		}
+		
+		.sectiontitle {
+			padding:0.5vw;
+			color:#FFFFFF;
+			font-family:"Arial Black", Gadget, sans-serif;
+			font-size:3vw;
+		}
+		
+		#contacttitle {
+			font-family:"Arial Black", Gadget, sans-serif;
+			color:#394053;
+			font-size:6.4vw;
+			line-height:0.8;
+			cursor:default;
+			user-select:none;
+		}
+		.contacttext {
+			font-family:"Arial Black", Gadget, sans-serif;
+			color:#394053;
+			margin-left:0.3vw;
+			font-size:2vw;
+			white-space:nowrap;
+		}
+		.contacttitlecolored {
+			display:inline;
+			color:#AFADCE;
+			transition:0.3s;
+		}
+		.contactline {
+			width:33.5vw;
+			height:1.75vw;
+			background-color:#AFADCE;
+			margin:0.5vw 0.4vw 0;
+			transition:0.3s;
+		}
+	</style>
+	<script>
+		var currentsectionbutton = -1;
+		function sectionClick(button) {
+			var sections = document.getElementsByClassName("sectioncontent");
+			for (var i=0, max=sections.length; i < max; i++)
+			{
+				sections[i].style.width=0;
+			}
+			if (button != currentsectionbutton)
+			{
+				if (button == 'contact')
+				{
+					document.getElementById("container"+button).style.width="55%";
+				}
+				else
+				{
+					document.getElementById("container"+button).style.width="225%";
+				}
+				currentsectionbutton = button;
+			}
+			else
+			{
+				currentsectionbutton = -1;
+			}
+		}
+		function contactHover(onOrOff) {
+			var hoverColor = onOrOff ? "#EAC435" : "#AFADCE";
+			var coloredTitle = document.getElementsByClassName("contacttitlecolored");
+			for (var i=0, max=coloredTitle.length; i < max; i++)
+			{
+				coloredTitle[i].style.color=hoverColor;
+			}
+			var coloredLine = document.getElementsByClassName("contactline");
+			for (var i=0, max=coloredLine.length; i < max; i++)
+			{
+				coloredLine[i].style.backgroundColor=hoverColor;
+			}
+		}
+	</script>
+</head>
+<body style="background-color:#FFFFFF;">
+<div id="main">
+	<div style="width:1; margin-left:-2"></div>
+	<div class="sectionbutton" id="buttonabout" onclick="sectionClick('about')">
+		<div class="sectiontitle">ABOUT</div>
+	</div>
+	<div class="sectioncontent" id="containerabout">
+		<div class="contentdisplay" id="contentabout">
+			about
+		</div>
+	</div>
+	<div class="sectionbutton" id="buttongames" onclick="sectionClick('games')">
+		<div class="sectiontitle">GAMES</div>
+	</div>
+	<div class="sectioncontent" id="containergames">
+		<div class="contentdisplay" id="contentgames">
+			games
+		</div>
+	</div>
+	<div class="sectionbutton" id="buttonblog" onclick="sectionClick('blog')">
+		<div class="sectiontitle">BLOG</div>
+	</div>
+	<div class="sectioncontent" id="containerblog">
+		<div class="contentdisplay" id="contentblog">
+			blog
+		</div>
+	</div>
+	<div class="sectionbutton" id="buttonportfolio" onclick="sectionClick('portfolio')">
+		<div class="sectiontitle">PORTFOLIO</div>
+	</div>
+	<div class="sectioncontent" id="containerportfolio">
+		<div class="contentdisplay" id="contentportfolio">
+			portfolio
+		</div>
+	</div>
+	<div class="sectionbutton" id="buttoncontact" onclick="sectionClick('contact')">
+		<div class="sectiontitle">CONTACT</div>
+	</div>
+	<div class="sectioncontent" id="containercontact">
+		<div class="contentdisplay" id="contentcontact">
+			<div id="contacttitle" onmouseover="contactHover(true)" onmouseleave="contactHover(false)">
+				<div class="contactline"></div>
+				OLI<div class="contacttitlecolored">VER</div><br>HEWI<div class="contacttitlecolored">SON</div><br>
+				<div class="contactline"></div>
+			</div>
+			<div class="contacttext">
+				HEWISONOLIVER@GMAIL.COM<br><br>
+				DISCORD: olihewi#8863<br>
+				<a href="https://twitter.com/olihewi" target="_blank">TWITTER: olihewi</a><br>
+				<a href="https://github.com/olihewi" target="_blank">GITHUB: olihewi</a><br><br>
+				<a href="https://www.linkedin.com/in/oliver-hewison-b499181a3/" target="_blank">LINKEDIN</a>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
