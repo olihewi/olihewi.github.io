@@ -8,7 +8,6 @@
 </head>
 <body onload="loadPage()">
 <div id="main">
-	<div style="width:1; margin-left:-2"></div>
 	<div class="sectionbutton" id="buttonabout" onclick="sectionClick('about')">
 		<div class="sectiontitle">ABOUT</div>
 	</div>
@@ -30,8 +29,13 @@
 		<div class="sectiontitle">BLOG</div>
 	</div>
 	<div class="sectioncontent" id="containerblog">
+		<div style="display:flex; flex-wrap: wrap; margin-bottom: 8px;">
+			<div class="blogcategorybutton" id="blogcategorygeneral" onclick="displayBlogPosts('general')">GENERAL</div>
+			<div class="blogcategorybutton" id="blogcategorygames" onclick="displayBlogPosts('games')">DEVLOGS</div>
+			<div class="blogcategorybutton" id="blogcategoryuni" onclick="displayBlogPosts('uni')">UNI WORK</div>
+		</div>
 		<div class="contentdisplay" id="contentblog">
-			<div class="blogpost">
+			<div class="blogpost bloggeneral">
 				<div class="postheader">
 					<h3 class="posttitle">The Beginning</h3>
 					<div class="postdate">October 14th, 2020</div>

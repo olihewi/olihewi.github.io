@@ -2,7 +2,7 @@ var currentsectionbutton = -1;
 function sectionClick(button) {
 	var sections = document.getElementsByClassName("sectioncontent");
 	var contents = document.getElementsByClassName("contentdisplay");
-	var sectionWidth = button == 'games' ? "1000" : button == 'blog' ? "1500" : button == 'contact' ? "52%" : "150%";
+	var sectionWidth = button == 'games' ? "1000" : button == 'blog' ? "800" : button == 'contact' ? "40%" : "75%";
 	for (var i=0, max=sections.length; i < max; i++)
 	{
 		sections[i].style.width=0;
@@ -22,7 +22,29 @@ function sectionClick(button) {
 		currentsectionbutton = -1;
 	}
 }
-
+var displayedblogs = "all";
+function displayBlogPosts(category) {
+	if (category == displayedblogs) { displayedblogs="all"; }
+	else { displayedblogs=category; }
+	var allcategorybuttons = document.getElementsByClassName("blogcategorybutton");
+	var allblogs = document.getElementsByClassName("blogpost");
+	for (var i=0, max=allblogs.length; i < max; i++)
+	{
+		allblogs[i].style.display="none"
+	}
+	if (displayedblogs == "all")
+	{
+		for (var i=0, max=allblogs.length; i < max; i++)
+		{
+			allblogs[i].style.display="block"
+		}
+	}
+	var blogsofcategory = document.getElementsByClassName("blog"+displayedblogs)
+	for (var j=0, num=blogsofcategory.length; j < num; j++)
+	{
+		blogsofcategory[j].style.display="block";
+	}
+}
 function contactHover(onOrOff) {
 	var hoverColor = onOrOff ? "#EAC435" : "#AFADCE";
 	var coloredTitle = document.getElementsByClassName("contacttitlecolored");

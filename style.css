@@ -28,7 +28,7 @@ body {
 
 .sectionbutton {
 	height:100%;
-	width:20%;
+	flex-grow:1;
 	writing-mode:vertical-rl;
 	cursor:pointer;
 	transition:0.3s;
@@ -48,6 +48,10 @@ padding:0 1%;
 	transition:0.5s;
 }
 
+#contentcontact {
+	padding: 8;
+}
+
 .sectiontitle {
 	padding:0.5vw;
 	color:#FFFFFF;
@@ -58,7 +62,7 @@ padding:0 1%;
 #contacttitle {
 	font-family:"Arial Black", Gadget, sans-serif;
 	color:#394053;
-	font-size:6.4vw;
+	font-size:7vw;
 	line-height:0.8;
 	cursor:default;
 	user-select:none;
@@ -66,7 +70,7 @@ padding:0 1%;
 .contacttext {
 	font-family:"Arial Black", Gadget, sans-serif;
 	color:#394053;
-	font-size:2vw;
+	font-size:2.5vw;
 	white-space:nowrap;
 	transition:0.3s;
 	text-align: center;
@@ -80,23 +84,38 @@ padding:0 1%;
 	transition:0.3s;
 }
 .contactline {
-	width:33.5vw;
-	height:1.75vw;
+	width:96%;
+	height:44.8;
 	background-color:#AFADCE;
-	margin:0.5vw 0.4vw 0;
+	margin-top:13;
 	transition:0.3s;
 }
 #gameslist {
-	margin:1vw;
+	margin:2;
 	display:flex;
 }
+.blogcategorybutton {
+	font-family:"Arial Black", Gadget, sans-serif;
+	background-color:#A8A6DE;
+	color:white;
+	flex-grow:1;
+	padding: 8px 24px;
+	text-align:center;
+	cursor: pointer;
+	border: 3px solid #8783D1;
+	transition: 0.3s;
+}
+.blogcategorybutton:hover { background-color: #8783D1; border-color: #A8A6DE;}
+#blogcategorygeneral {}
+#blogcategorygames { background-color: #F7A78D; border-color: #F4845F;} .blogcategorygames:hover { background-color: #F4845F; border-color:#F7A78D;}
+#blogcategoryuni { background-color: #B1D2C2; border-color: #86BAA1;} .blogcategoryuni:hover { background-color: #86BAA1; border-color:#B1D2C2;}
 .blogpost {
 	margin: 0 16;
+	background-color: #8783D1;
 }
 .postheader {
 	padding:8px;
 	color: white;
-	background-color: #8783D1;
 }
 .posttitle {
 	display:inline;
@@ -110,5 +129,10 @@ padding:0 1%;
 }
 .postcontent {
 	font-family: Tahoma, Geneva, sans-serif;
-	margin-left:8px;
+	padding-left:8px;
+	padding-top:8px;
+	margin-top:0px;
+	background-color: white;
 }
+.bloggeneral {}
+.bloggames { background-color:#F4845F;}
