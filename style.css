@@ -29,7 +29,7 @@ body {
 .sectionbutton {
 	height:100%;
 	flex-grow:1;
-	writing-mode:vertical-rl;
+	writing-mode:vertical-lr;
 	cursor:pointer;
 	transition:0.3s;
 }
