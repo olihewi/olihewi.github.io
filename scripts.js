@@ -27,6 +27,10 @@ function displayBlogPosts(category) {
 	if (category == displayedblogs) { displayedblogs="all"; }
 	else { displayedblogs=category; }
 	var allcategorybuttons = document.getElementsByClassName("blogcategorybutton");
+	for (var i=0, max=allcategorybuttons.length; i < max; i++)
+	{
+		allcategorybuttons[i].id=allcategorybuttons[i].id.replace("active","");
+	}
 	var allblogs = document.getElementsByClassName("blogpost");
 	for (var i=0, max=allblogs.length; i < max; i++)
 	{
@@ -39,10 +43,14 @@ function displayBlogPosts(category) {
 			allblogs[i].style.display="block"
 		}
 	}
-	var blogsofcategory = document.getElementsByClassName("blog"+displayedblogs)
-	for (var j=0, num=blogsofcategory.length; j < num; j++)
+	else
 	{
-		blogsofcategory[j].style.display="block";
+		document.getElementById("blogcategory"+category).id = "blogcategory"+category+"active";
+		var blogsofcategory = document.getElementsByClassName("blog"+displayedblogs)
+		for (var j=0, num=blogsofcategory.length; j < num; j++)
+		{
+			blogsofcategory[j].style.display="block";
+		}
 	}
 }
 function contactHover(onOrOff) {
