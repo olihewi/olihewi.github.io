@@ -11,10 +11,14 @@
 	<div class="sectionbutton" id="buttonabout" onclick="sectionClick('about')">
 		<div class="sectiontitle">ABOUT</div>
 	</div>
-	<div class="sectioncontent" id="containerabout">
+	<div class="sectioncontent" id="containerabout" onscroll="scrollAbout()">
 		<div class="contentdisplay" id="contentabout">
-			about
-		</div>
+			<div style="position:sticky; top:0; text-align:center; color: white; object-fit: cover;">
+				<img src="images/aboutimage.jpg" width=100% id="aboutimage">
+				<div class="abouttitle"><b>Oliver Hewison</b><br><div style="font-size: 32px;"><i>Game Developer, Programmer</i></div></div>
+			</div>
+			test
+			</div>
 	</div>
 	<div class="sectionbutton" id="buttongames" onclick="sectionClick('games')">
 		<div class="sectiontitle">GAMES</div>
@@ -46,11 +50,11 @@
 			</div>
 			<div class="blogpost bloguni">
 				<div class="postheader">
-					<h3 class="posttitle">Test Uni Work</h3>
+					<h3 class="posttitle">Test Uni Work Log</h3>
 					<div class="postdate">October 16th, 2020</div>
 				</div>
 				<p class="postcontent">
-					This is a test uni work thingy.
+					This is a test uni work log.
 				</p>
 			</div>
 			<div class="blogpost bloggeneral">

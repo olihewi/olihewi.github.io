@@ -137,3 +137,20 @@ padding:0 1%;
 .bloggeneral {}
 .bloggames { background-color:#F4845F;}
 .bloguni { background-color:#86BAA1;}
+
+.abouttitle {
+	position: absolute;
+	display:inline;
+	bottom: 8px;
+	left: 16px;
+	line-height:0.95;
+	text-align:left;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 64px;
+}
+#aboutimage {
+	object-fit: cover;
+	object-position: 75% 12%;
+	height: 100%;
+	transition: 0.5s;
+}

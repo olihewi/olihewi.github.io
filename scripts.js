@@ -2,7 +2,7 @@ var currentsectionbutton = -1;
 function sectionClick(button) {
 	var sections = document.getElementsByClassName("sectioncontent");
 	var contents = document.getElementsByClassName("contentdisplay");
-	var sectionWidth = button == 'games' ? "1000" : button == 'blog' ? "800" : button == 'contact' ? "40%" : "75%";
+	var sectionWidth = button == 'about' ? "1200" : button == 'games' ? "1000" : button == 'blog' ? "800" : button == 'contact' ? "40%" : "75%";
 	for (var i=0, max=sections.length; i < max; i++)
 	{
 		sections[i].style.width=0;
@@ -82,7 +82,14 @@ function getUrlParam(parameter, defaultvalue){
         }
     return urlparameter;
 }
-
+function scrollAbout() {
+	var aboutheader = document.getElementById("aboutimage");
+	if (document.getElementById("containerabout").scrollTop > 1)
+	{
+		aboutheader.style.height = "150px";
+		aboutheader.style.filter = "brightness(50%)";
+	}
+}
 function loadPage()
 {
 	var activeTab = getUrlParam("tab","none");
