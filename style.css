@@ -96,17 +96,17 @@ padding:0 1%;
 }
 .blogcategorybutton {
 	font-family:"Arial Black", Gadget, sans-serif;
-	background-color:#394053;
+	background-color:#5B6686;
 	color:white;
 	flex-grow:1;
 	padding: 8px 24px;
 	text-align:center;
 	cursor: pointer;
-	border-bottom: 3px solid #5B6686;
+	border-bottom: 3px solid #394053;
 	transition: 0.3s;
 }
-.blogcategorybutton:hover { background-color: #5B6686; border-color: #394053;}
-#blogcategorygeneral { background-color: #8783D1; border-color: #A8A6DE;} #blogcategorygeneralactive { background-color: #8783D1; border-color:#A8A6DE;}
+.blogcategorybutton:hover { background-color: #394053; border-color: #5B6686;}
+#blogcategorygeneral { background-color: #A8A6DE; border-color: #8783D1;} #blogcategorygeneral:hover { background-color: #8783D1; border-color:#A8A6DE;} #blogcategorygeneralactive { background-color: #8783D1; border-color:#A8A6DE;}
 #blogcategorygames { background-color: #F7A78D; border-color: #F4845F;} #blogcategorygames:hover { background-color: #F4845F; border-color:#F7A78D;} #blogcategorygamesactive { background-color: #F4845F; border-color:#F7A78D;}
 #blogcategoryuni { background-color: #B1D2C2; border-color: #86BAA1;} #blogcategoryuni:hover { background-color: #86BAA1; border-color:#B1D2C2;} #blogcategoryuniactive { background-color: #86BAA1; border-color:#B1D2C2;}
 .blogpost {
