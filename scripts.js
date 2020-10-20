@@ -26,6 +26,16 @@ var displayedblogs = "all";
 function displayBlogPosts(category) {
 	if (category == displayedblogs) { displayedblogs="all"; }
 	else { displayedblogs=category; }
+	
+	if (displayedblogs == "uni" || displayedblogs == "gea" || displayedblogs == "gld" || displayedblogs == "pg" || displayedblogs == "mgic")
+	{
+		document.getElementById("unipostssubsection").style.display="flex";
+	}
+	else
+	{
+		document.getElementById("unipostssubsection").style.display="none";
+	}
+	
 	var allcategorybuttons = document.getElementsByClassName("blogcategorybutton");
 	for (var i=0, max=allcategorybuttons.length; i < max; i++)
 	{

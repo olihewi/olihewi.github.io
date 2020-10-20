@@ -33,13 +33,21 @@
 		<div class="sectiontitle">BLOG</div>
 	</div>
 	<div class="sectioncontent" id="containerblog">
-		<div style="display:flex; flex-wrap: wrap; margin-bottom: 8px;">
-			<div class="blogcategorybutton" id="blogcategorygeneral" onclick="displayBlogPosts('general')">GENERAL</div>
-			<div class="blogcategorybutton" id="blogcategorygames" onclick="displayBlogPosts('games')">DEVLOGS</div>
-			<div class="blogcategorybutton" id="blogcategoryuni" onclick="displayBlogPosts('uni')">UNI WORK</div>
+		<div style="margin-bottom: 8px">
+			<div style="display:flex; flex-wrap: wrap;">
+				<div class="blogcategorybutton" id="blogcategorygeneral" onclick="displayBlogPosts('general')">GENERAL</div>
+				<div class="blogcategorybutton" id="blogcategorygames" onclick="displayBlogPosts('games')">DEVLOGS</div>
+				<div class="blogcategorybutton" id="blogcategoryuni" onclick="displayBlogPosts('uni')">UNI WORK</div>
+			</div>
+			<div id="unipostssubsection" style="display:none; flex-wrap: wrap;">
+				<div class="blogcategorybutton" id="blogcategorygea" onclick="displayBlogPosts('gea')">GAME ENGINE ARCHITECTURE</div>
+				<div class="blogcategorybutton" id="blogcategorygld" onclick="displayBlogPosts('gld')">GAME LEVEL DESIGN</div>
+				<div class="blogcategorybutton" id="blogcategorypg" onclick="displayBlogPosts('pg')">PLAY & GAMES</div>
+				<div class="blogcategorybutton" id="blogcategorymgic" onclick="displayBlogPosts('mgic')">MORE GAMES IN C++</div>
+			</div>
 		</div>
 		<div class="contentdisplay" id="contentblog">
-			<div class="blogpost bloguni">
+			<div class="blogpost bloguni bloggea">
 				<div class="postheader">
 					<h3 class="posttitle">Voxel Mesh Generation</h3>
 					<div class="postdate">October 20th, 2020</div>
@@ -48,7 +56,7 @@
 					<iframe width="100%" height="450px" src="https://www.youtube.com/embed/Oy5SPUCTVPU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</p>
 			</div>
-			<div class="blogpost bloguni">
+			<div class="blogpost bloguni bloggld">
 				<div class="postheader">
 					<h3 class="posttitle">Learning About Levels</h3>
 					<div class="postdate">October 20th, 2020</div>
@@ -81,7 +89,7 @@
 					<a href="http://straydev.co.uk/" target="_blank"><u>Stephen Rayment</u></a>, <a href="https://andrei203.github.io/" target="_blank"><u>Andrei Barlea</u></a>, <a href="https://b3-kennedy.github.io" target="_blank"><u>Benjamin Kennedy</u></a> and <a href="https://ltucker98.github.io/" target="_blank"><u>Lewis Tucker</u></a>.
 				</p>
 			</div>
-			<div class="blogpost bloguni">
+			<div class="blogpost bloguni bloggea">
 				<div class="postheader">
 					<h3 class="posttitle">Blocky Beginnings</h3>
 					<div class="postdate">October 19th, 2020</div>
