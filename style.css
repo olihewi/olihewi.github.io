@@ -90,6 +90,14 @@ padding:0 1%;
 	margin-top:13;
 	transition:0.3s;
 }
+.aboutheader {
+	font-family: Tahoma, Geneva, sans-serif;
+	background-color: #121635;
+	color: white;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 32px;
+}
 #gameslist {
 	margin:2;
 	display:flex;
@@ -154,4 +162,22 @@ padding:0 1%;
 	object-position: 75% 12%;
 	height: 100%;
 	transition: 0.5s;
+}
+.aboutcontainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.aboutcontainercontent {
+  text-align: center;
+  flex-grow: 1;
+  min-width: 200px;
+	font-family: Tahoma, Geneva, sans-serif;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: white;
+}
+.big {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
 }

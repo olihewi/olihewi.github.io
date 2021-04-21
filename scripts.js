@@ -27,7 +27,7 @@ function displayBlogPosts(category) {
 	if (category == displayedblogs) { displayedblogs="all"; }
 	else { displayedblogs=category; }
 	
-	if (displayedblogs == "uni" || displayedblogs == "gea" || displayedblogs == "gld" || displayedblogs == "pg" || displayedblogs == "mgic")
+	if (displayedblogs == "uni" || displayedblogs == "gea" || displayedblogs == "gld" || displayedblogs == "pg" || displayedblogs == "mgic" || displayedblogs == "gep")
 	{
 		document.getElementById("unipostssubsection").style.display="flex";
 	}
