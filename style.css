@@ -1,0 +1,183 @@
+a { text-decoration: none; color: inherit; transition:0.3s;}
+a:visited { color: inherit;}
+a:hover { color: #EAC435;}
+a:active { color: inherit;}
+
+body {
+	margin:0;
+	padding:0;
+}
+
+#main {
+	display:flex;
+	width:100%;
+	height:100%;
+}
+
+#buttonabout {background-color:#EAC435; order:1;} #buttonabout:hover {background-color:#F3DE90}
+#buttongames {background-color:#F4845F; order:3;} #buttongames:hover {background-color:#F7A78D}
+#buttonblog {background-color:#8783D1; order:5;} #buttonblog:hover {background-color:#A8A6DE}
+#buttonportfolio {background-color:#86BAA1; order:7;} #buttonportfolio:hover {background-color:#B1D2C2}
+#buttoncontact {background-color:#394053; order:9;} #buttoncontact:hover {background-color:#5B6686}
+		
+#containerabout {order:2;}
+#containergames {order:4;}
+#containerblog {order:6;}
+#containerportfolio {order:8;}
+#containercontact {order:10;}
+
+.sectionbutton {
+	height:100%;
+	flex-grow:1;
+	writing-mode:vertical-lr;
+	cursor:pointer;
+	transition:0.3s;
+}
+.sectionbutton:hover {
+padding:0 1%;
+}
+.sectioncontent {
+	width:0;
+	overflow-x:hidden;
+	overflow-y:auto;
+	transition:0.5s;
+}
+.contentdisplay {
+	width:100%;
+	display:block;
+	transition:0.5s;
+}
+
+#contentcontact {
+	padding: 8;
+}
+
+.sectiontitle {
+	padding:0.5vw;
+	color:#FFFFFF;
+	font-family:"Arial Black", Gadget, sans-serif;
+	font-size:72px;
+}
+
+#contacttitle {
+	font-family:"Arial Black", Gadget, sans-serif;
+	color:#394053;
+	font-size:7vw;
+	line-height:0.8;
+	cursor:default;
+	user-select:none;
+}
+.contacttext {
+	font-family:"Arial Black", Gadget, sans-serif;
+	color:#394053;
+	font-size:2.5vw;
+	white-space:nowrap;
+	transition:0.3s;
+	text-align: center;
+	line-height:1.2;
+	user-select:text;
+	cursor:auto;
+}
+.contacttitlecolored {
+	display:inline;
+	color:#AFADCE;
+	transition:0.3s;
+}
+.contactline {
+	width:96%;
+	height:44.8;
+	background-color:#AFADCE;
+	margin-top:13;
+	transition:0.3s;
+}
+.aboutheader {
+	font-family: Tahoma, Geneva, sans-serif;
+	background-color: #121635;
+	color: white;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 32px;
+}
+#gameslist {
+	margin:2;
+	display:flex;
+}
+.blogcategorybutton {
+	font-family:"Arial Black", Gadget, sans-serif;
+	background-color:#5B6686;
+	color:white;
+	flex-grow:1;
+	padding: 8px 24px;
+	text-align:center;
+	cursor: pointer;
+	border-bottom: 3px solid #394053;
+	transition: 0.3s;
+}
+.blogcategorybutton:hover { background-color: #394053; border-color: #5B6686;}
+#blogcategorygeneral { background-color: #A8A6DE; border-color: #8783D1;} #blogcategorygeneral:hover { background-color: #8783D1; border-color:#A8A6DE;} #blogcategorygeneralactive { background-color: #8783D1; border-color:#A8A6DE;}
+#blogcategorygames { background-color: #F7A78D; border-color: #F4845F;} #blogcategorygames:hover { background-color: #F4845F; border-color:#F7A78D;} #blogcategorygamesactive { background-color: #F4845F; border-color:#F7A78D;}
+#blogcategoryuni { background-color: #B1D2C2; border-color: #86BAA1;} #blogcategoryuni:hover { background-color: #86BAA1; border-color:#B1D2C2;} #blogcategoryuniactive { background-color: #86BAA1; border-color:#B1D2C2;}
+.blogpost {
+	margin: 0 16;
+	background-color: #8783D1;
+}
+.postheader {
+	padding:8px;
+	color: white;
+}
+.posttitle {
+	display:inline;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 48px;
+}
+.postdate {
+	display:inline;
+	font-family: Tahoma, Geneva, sans-serif;
+	margin-left:20px;
+	white-space: nowrap;
+}
+.postcontent {
+	font-family: Tahoma, Geneva, sans-serif;
+	padding-left:8px;
+	padding-top:8px;
+	margin-top:0px;
+	background-color: white;
+}
+.bloggeneral {}
+.bloggames { background-color:#F4845F;}
+.bloguni { background-color:#86BAA1;}
+
+.abouttitle {
+	position: absolute;
+	display:inline;
+	bottom: 8px;
+	left: 16px;
+	line-height:0.95;
+	text-align:left;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 64px;
+}
+#aboutimage {
+	object-fit: cover;
+	object-position: 75% 12%;
+	height: 100%;
+	transition: 0.5s;
+}
+.aboutcontainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.aboutcontainercontent {
+  text-align: center;
+  flex-grow: 1;
+  min-width: 200px;
+	font-family: Tahoma, Geneva, sans-serif;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: white;
+}
+.big {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
