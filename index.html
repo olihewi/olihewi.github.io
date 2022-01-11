@@ -1,278 +1,299 @@
-<head>
-	<meta charset="UTF-8">
-	<title>Oliver Hewison - Hello!</title>
-	<meta name="description" content="Game Developer and Programmer - This is my website!">
-	<link rel="stylesheet" href="style.css">
-	<link rel="icon" href="images/favicon.png">
-	<script src="scripts.js"></script>
-</head>
-<body onload="loadPage()">
-<div id="main">
-	<div class="sectionbutton" id="buttonabout" onclick="sectionClick('about')">
-		<div class="sectiontitle">ABOUT</div>
-	</div>
-	<div class="sectioncontent" id="containerabout" onscroll="scrollAbout()">
-		<div class="contentdisplay" id="contentabout">
-			<div style="position:sticky; top:0; text-align:center; color: white; object-fit: cover;">
-				<img src="images/aboutimage.jpg" width=100% id="aboutimage">
-				<div class="abouttitle"><b>Oliver Hewison</b><br><div style="font-size: 32px;"><i>Game Developer, Programmer</i></div></div>
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Oliver Hewison</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" href="images/favicon.png">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/profile.png" alt="" /></span><span class="title">Portfolio</span>
+								</a>
+                &nbsp&nbsp&nbsp&nbsp&nbsp
+                <a href="test.html" class="logo">
+                  <span class="title">CV</span>
+                </a>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<header>
+								<h1>Oliver Hewison</h1>
+								<p>I am a game programmer with over 5 years of independent and professional experience, particularly in Toolchain and Gameplay Programming.<br>Below, you can see all of the projects I have worked on, in reverse chronological order.</p>
+							</header>
+							<section class="tiles">
+								<article>
+									<span class="image">
+										<img src="images/portfolio/default.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Spellcasters</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/portfolio/default.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Untitled Cohort Project</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/portfolio/level_completability.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Level Completability Detection</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/portfolio/a_remembering.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>A Remembering</h2>
+										<div class="content">
+											<p>A short film exploring the theme of dementia, produced as part of UWE's Audio-Visual Studio module.</p>
+										</div>
+									</a>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/portfolio/stork_market.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Stork Market</h2>
+										<div class="content">
+											<p>"A god game where you distribute babies to dominate the market"<br>Made in Unity with a 5-person team as part of UWE's Commercial Games Development module.</p>
+										</div>
+									</a>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/portfolio/super_funky_ball.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Super Funky Ball</h2>
+										<div class="content">
+											<p>A clone of Super Monkey Ball, built from the scratch in DirectX using C++.<br>Featuring a physics engine, data-driven level loading, and rendering pipeline.<br>Made as part of UWE's Advanced Technologies module.</p>
+										</div>
+									</a>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/portfolio/stumble_chums.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Stumble Chums</h2>
+										<div class="content">
+											<p>An Atari-style reimagining of the Jump Club minigame from Fall Guys.<br>Made in Unity with a 5-person team as part of UWE's Commercial Games Development module.</p>
+										</div>
+									</a>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/portfolio/netscape.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>NetScape</h2>
+										<div class="content">
+											<p>A 4-person multiplayer top-down arena shooter.<br>Made with a 4-person team in a proprietary OpenGL-based engine in C++ as part of UWE's More Games in C++ module.</p>
+										</div>
+									</a>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/portfolio/super_shmup_maker.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Super SHMUP Maker</h2>
+										<div class="content">
+											<p>A Data-Driven DirectX game engine, allowing designers to create their own shoot-'em-up games.<br>Made in C++ as part of UWE's Game Engine Programming module with a 3-person team.</p>
+										</div>
+									</a>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/portfolio/robin_woods.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Robin Woods and the Clockwork Castle</h2>
+										<div class="content">
+											<p>A prototype board game made with a 4-person team as part of UWE's Play & Games module.</p>
+										</div>
+									</a>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/portfolio/connect_four.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Networked Connect Four</h2>
+										<div class="content">
+											<p>An online multiplayer Connect Four game.<br>Made in C++ with a 2-person team as part of UWE's More Games in C++ module.</p>
+										</div>
+									</a>
+								</article>
+                <article>
+									<span class="image">
+										<img src="images/portfolio/amazoff.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>GGJ21: Amazoff Lost & Found</h2>
+										<div class="content">
+											<p>My second Global Game Jam.<br>A horror-style game set in an Amazoff warehouse after closing hours.<br>Made in Unity in 48 hours.</p>
+										</div>
+									</a>
+								</article>
+                <article>
+									<span class="image">
+										<img src="images/portfolio/blocky.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Blocky</h2>
+										<div class="content">
+											<p>A highly data-driven voxel terrain generation framework for Unity.<br>Made as part of UWE's Game Engine Architecture module.</p>
+										</div>
+									</a>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/portfolio/default.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>ASGETrek</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/portfolio/default.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Upset Birds</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/portfolio/default.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Flynn Starchad</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/portfolio/default.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Ping</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+								<article>
+									<span class="image">
+										<img src="images/portfolio/default.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>A Boy and his Torch</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+							</section>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Contact</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Oliver Hewison. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
 			</div>
-      <div class="aboutheader">Languages</div>
-      <div class="aboutcontainer">
-        <div class="aboutcontainercontent" style="background: linear-gradient(135deg, #659ad2 0%,#659ad2 50%,#00599c 50%,#00599c 100%);"><p class="big">C++</p>Fluent</div>
-        <div class="aboutcontainercontent" style="background: linear-gradient(135deg, #9e75da 0%,#9e75da 50%,#3b009a 50%,#3b009a 100%);"><p class="big">C#</p>Fluent</div>
-        <div class="aboutcontainercontent" style="background: linear-gradient(135deg, #e47001 0%,#e47001 50%,#5287a9 50%,#5287a9 100%);"><p class="big">Java</p>Fluent</div>
-        <div class="aboutcontainercontent" style="background: linear-gradient(135deg, #366f9e 0%,#366f9e 50%,#FFC736 50%,#FFC736 100%);"><p class="big">Python</p>Fluent</div>
-        <div class="aboutcontainercontent" style="background: linear-gradient(135deg, #000080 0%,#000080 50%,#504c71 50%,#504c71 100%);"><p class="big">LUA</p>Learning</div>
-        <div class="aboutcontainercontent" style="background: linear-gradient(135deg, #c7a381 0%,#c7a381 50%,#825432 50%,#825432 100%);"><p class="big">Rust</p>Learning</div>
-        <div class="aboutcontainercontent" style="background: linear-gradient(135deg, #E44D26 0%,#E44D26 50%,#F16529 50%,#F16529 100%);"><p class="big">HTML</p>Basic Knowledge</div>
-        <div class="aboutcontainercontent" style="background: linear-gradient(135deg, #264DE4 0%,#264DE4 50%,#2965F1 50%,#2965F1 100%);"><p class="big">CSS</p>Basic Knowledge</div>
-        <div class="aboutcontainercontent" style="background: linear-gradient(135deg, #E6B101 0%,#E6B101 50%,#FFC736 50%,#FFC736 100%);"><p class="big">JavaScript</p>Basic Knowledge</div>
-      </div>
-      <div class="aboutheader">Tools</div>
-      <div class="aboutcontainer">
-        <div class="aboutcontainercontent" style="background: linear-gradient(135deg, #F05133 0%,#F05133 50%,#413000 50%,#413000 100%);"><p class="big">Git</p></div>
-        <div class="aboutcontainercontent" style="background: linear-gradient(135deg, #0277BD 0%,#0277BD 50%,#E57B0B 50%,#E57B0B 100%);"><p class="big">OpenGL</p></div>
-        <div class="aboutcontainercontent" style="background: linear-gradient(135deg, #8FAE4F 0%,#8FAE4F 50%,#BDC99A 50%,#BDC99A 100%);"><p class="big">DirectX</p></div>
-        <div class="aboutcontainercontent" style="background: linear-gradient(135deg, #000000 0%,#000000 50%,#222C37 50%,#222C37 100%);"><p class="big">Unity</p></div>
-        <div class="aboutcontainercontent" style="background: linear-gradient(135deg, #478CBF 0%,#478CBF 50%,#414042 50%,#414042 100%);"><p class="big">Godot</p></div>
-        <div class="aboutcontainercontent" style="background: linear-gradient(135deg, #A27697 0%,#A27697 50%,#4C4E89 50%,#4C4E89 100%);"><p class="big">Unreal</p></div>
-        <div class="aboutcontainercontent" style="background: linear-gradient(135deg, #E87D0D 0%,#E87D0D 50%,#265787 50%,#265787 100%);"><p class="big">Blender</p></div>
-        <div class="aboutcontainercontent" style="background: linear-gradient(135deg, #54BDC3 0%,#54BDC3 50%,#188089 50%,#188089 100%);"><p class="big">Maya</p></div>
-        <div class="aboutcontainercontent" style="background: linear-gradient(135deg, #1AC8A4 0%,#1AC8A4 50%,#029DE0 50%,#029DE0 100%);"><p class="big">CLion</p></div>
-        <div class="aboutcontainercontent" style="background: linear-gradient(135deg, #C90F5E 0%,#D02653 50%,#4359C9 50%,#4359C9 100%);"><p class="big">Rider</p></div> 
-        <div class="aboutcontainercontent" style="background: linear-gradient(135deg, #996C7C 0%,#996C7C 50%,#659E8F 50%,#659E8F 100%);"><p class="big">Aseprite</p></div>
-        <div class="aboutcontainercontent" style="background: linear-gradient(135deg, #67AED8 0%,#67AED8 50%,#3D4C4F 50%,#3D4C4F 100%);"><p class="big">FMOD</p></div>
-      </div>
-      <div class="aboutheader">Hobbies</div>
-      <div class="aboutcontainer">
-        <div class="aboutcontainercontent" style="background: linear-gradient(180deg, #443037 0%,#443037 90%,#FFD000 90%,#FFD000 100%);"><p class="big">Skateboarding</p></div>
-        <div class="aboutcontainercontent" style="background: linear-gradient(180deg, #443037 0%,#443037 90%,#13C400 90%,#13C400 100%);"><p class="big">Longboarding</p></div>
-        <div class="aboutcontainercontent" style="background: linear-gradient(180deg, #443037 0%,#443037 90%,#D30000 90%,#D30000 100%);"><p class="big">Bass Guitar</p></div>
-        <div class="aboutcontainercontent" style="background: linear-gradient(180deg, #443037 0%,#443037 90%,#D100C6 90%,#D100C6 100%);"><p class="big">Passion Project</p></div>
-        <div class="aboutcontainercontent" style="background: linear-gradient(180deg, #443037 0%,#443037 90%,#A453DB 90%,#A453DB 100%);"><p class="big">Modding</p></div>
-        <div class="aboutcontainercontent" style="background: linear-gradient(180deg, #443037 0%,#443037 90%,#A85E34 90%,#A85E34 100%);"><p class="big">Cooking</p></div>
-      </div>
-    </div>
-	</div>
-	<div class="sectionbutton" id="buttongames" onclick="sectionClick('games')">
-		<div class="sectiontitle">GAMES</div>
-	</div>
-	<div class="sectioncontent" id="containergames">
-		<div class="contentdisplay" id="contentgames" style="padding:10px">
-			<iframe frameborder="0" src="https://itch.io/embed/902783" width="95%" height="167"><a href="https://olihewi.itch.io/amazoff-lost-and-found">Amazoff Lost &amp; Found by olihewi, Startrix</a></iframe>
-			<iframe frameborder="0" src="https://itch.io/embed/560757?linkback=true&amp;border_color=F4845F;border_width=1&amp" width="95%" height="167"><a href="https://olihewi.itch.io/flynn-starchad">Flynn Starchad by olihewi</a></iframe><br>
-			<iframe frameborder="0" src="https://itch.io/embed/299522?linkback=true&amp;border_color=F4845F;border_width=1&amp" width="95%" height="167"><a href="https://olihewi.itch.io/a-boy-and-his-torch">A Boy and his Torch by olihewi</a></iframe>
-		</div>
-	</div>
-	<div class="sectionbutton" id="buttonblog" onclick="sectionClick('blog')">
-		<div class="sectiontitle">BLOG</div>
-	</div>
-	<div class="sectioncontent" id="containerblog">
-		<div style="margin-bottom: 8px">
-			<div style="display:flex; flex-wrap: wrap;">
-				<div class="blogcategorybutton" id="blogcategorygeneral" onclick="displayBlogPosts('general')">GENERAL</div>
-				<div class="blogcategorybutton" id="blogcategorygames" onclick="displayBlogPosts('games')">DEVLOGS</div>
-				<div class="blogcategorybutton" id="blogcategoryuni" onclick="displayBlogPosts('uni')">UNI WORK</div>
-			</div>
-			<div id="unipostssubsection" style="display:none; flex-wrap: wrap;">
-			<div class="blogcategorybutton" id="blogcategorygep" onclick="displayBlogPosts('gep')">GAME ENGINE PROGRAMMING</div>
-				<div class="blogcategorybutton" id="blogcategorygea" onclick="displayBlogPosts('gea')">GAME ENGINE ARCHITECTURE</div>
-				<div class="blogcategorybutton" id="blogcategorygld" onclick="displayBlogPosts('gld')">GAME LEVEL DESIGN</div>
-				<div class="blogcategorybutton" id="blogcategorypg" onclick="displayBlogPosts('pg')">PLAY & GAMES</div>
-				<div class="blogcategorybutton" id="blogcategorymgic" onclick="displayBlogPosts('mgic')">MORE GAMES IN C++</div>
-			</div>
-		</div>
-		<div class="contentdisplay" id="contentblog">
-			<div class="blogpost bloggames">
-				<div class="postheader">
-					<h3 class="posttitle">GGJ2021 Wrap-up</h3>
-					<div class="postdate">January 31st, 2021</div>
-				</div>
-				<p class="postcontent">
-					<iframe width="100%" height="450px" src="https://www.youtube.com/embed/CLyT9Jlj2XQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					<br><br>It's the end of January, and that means time for the Global Game Jam! Last year was my first, which makes this year my second.<br>Things have been different this year, playing out more like a typical online game jam, and this time I was working with a group I had only just met over Altspace VR. The theme given was <i>"Lost and Found"</i>, and after a lot of brainstorming, we came up with the great idea of being a warehouse worker who must carry out their minimum wage job at all costs during a robot uprising.<br><br>This jam, I decided to focus on a 3D modelling role, having just picked up blender this week. Because of the time-scale, we went for a low-poly aesthetic, which worked out well for me, as I had been following <a href="https://www.youtube.com/user/ImphenziaMusic" target = "_blank">Imphenzia</a>'s really simple tutorials. I got some good practice in and had a lot of fun this time, not having to stress so much about my own progress.<br><br>You can find and download the game <b><a href="https://olihewi.itch.io/amazoff-lost-and-found" target = "_blank">HERE</a></b>!
-				</p>
-			</div>
-			<div class="blogpost bloguni bloggld">
-				<div class="postheader">
-					<h3 class="posttitle">Level Design Showcase</h3>
-					<div class="postdate">January 20th, 2021</div>
-				</div>
-				<p class="postcontent">
-					<iframe width="100%" height="450px" src="https://www.youtube.com/embed/wc9dVyJAPVo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</p>
-			</div>
-			<div class="blogpost bloguni blogmgic">
-				<div class="postheader">
-					<h3 class="posttitle">ASGETrek Showcase</h3>
-					<div class="postdate">January 6th, 2021</div>
-				</div>
-				<p class="postcontent">
-					<iframe width="100%" height="450px" src="https://www.youtube.com/embed/Eth9oXwkd_s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</p>
-			</div>
-			<div class="blogpost bloguni bloggea">
-				<div class="postheader">
-					<h3 class="posttitle">Blocky Showcase</h3>
-					<div class="postdate">December 16th, 2020</div>
-				</div>
-				<p class="postcontent">
-					<iframe width="100%" height="450px" src="https://www.youtube.com/embed/gh07R3Y8b4s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</p>
-			</div>
-			<div class="blogpost bloguni bloggea">
-				<div class="postheader">
-					<h3 class="posttitle">Blocky: Building</h3>
-					<div class="postdate">November 29th, 2020</div>
-				</div>
-				<p class="postcontent">
-					<iframe width="100%" height="450px" src="https://www.youtube.com/embed/q9rFoaNKoRQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</p>
-			</div>
-			<div class="blogpost bloguni bloggea">
-				<div class="postheader">
-					<h3 class="posttitle">Blocky: Godot</h3>
-					<div class="postdate">November 7th, 2020</div>
-				</div>
-				<p class="postcontent">
-					<iframe width="100%" height="450px" src="https://www.youtube.com/embed/KkWpReiqexk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</p>
-			</div>
-			<div class="blogpost bloguni bloggea">
-				<div class="postheader">
-					<h3 class="posttitle">Blocky: Texturing</h3>
-					<div class="postdate">October 20th, 2020</div>
-				</div>
-				<p class="postcontent">
-					<iframe width="100%" height="450px" src="https://www.youtube.com/embed/HSSNR2d5C4k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</p>
-			</div>
-			<div class="blogpost bloguni bloggea">
-				<div class="postheader">
-					<h3 class="posttitle">Blocky: Making Meshes</h3>
-					<div class="postdate">October 21th, 2020</div>
-				</div>
-				<p class="postcontent">
-					<iframe width="100%" height="450px" src="https://www.youtube.com/embed/Oy5SPUCTVPU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</p>
-			</div>
-			<div class="blogpost bloguni bloggld">
-				<div class="postheader">
-					<h3 class="posttitle">Learning About Levels</h3>
-					<div class="postdate">October 20th, 2020</div>
-				</div>
-				<p class="postcontent">
-					One of my modules this year is Game Level Design. I'll be learning about the fundamentals of level design and 
-					will be creating a level throughout the year using Unreal Engine (my first time using it). 
-					To get a grasp of everything that level design entails, I began researching similarities between job listings 
-					for level design roles. Here were some of the key points:<br><br>
-					- <i>Working alongside gameplay programmers</i> to develop levels based off of key gameplay mechanics<br>
-					- The ability to tell stories and support narrative through <i>environmental storytelling</i><br>
-					- The ability to analyse game worlds/levels and <i>understand what makes them fun</i><br>
-					- Experience crafting levels or worlds with modern level building software (UE4, Unity, CryEngine, etc) <br>
-					- <i>Developing basic underlying principles of the game</i> (game mechanics, levels, etc.).<br>
-					- Expertise in <i>programming, art, or architecture</i> is greatly valued<br><br>
-					I have a little prior experience in designing levels, though not published. A while ago, I decided to make a 
-					map for Counter-Strike: Global Offensive using their SDK, though when university continued, I put the project 
-					aside until I found more time to work on it. <br><br>
-					<a href="https://imgur.com/a/J6vDvhY" target="_blank"><img src="https://i.imgur.com/qJEssgA.png" width=100%></a><br><br>
-					This taught me a lot about levels. As Counter-Strike is a strategic, teamwork-based multiplayer shooter, 
-					designing the level became about balancing it for both teams above all else: Providing cover, chokepoints, 
-					retake opportunities and sightlines, all while making the map unique compared to other maps in the game became 
-					a juggling act, and I soon realised how much effort is put into professional level design, with even just blocking 
-					out the map taking days upon days.<br><br>
-					So now I know some bits and bobs about what's involved in level design, I'm looking forward to working on my project 
-					over the next few months. While I am a big fan of gameplay programming, I've now realised that the two roles are 
-					intertwined and must take advantage of each other to succeed. This can be seen in all sorts of games, from my example of 
-					CS:GO, to platformers like Celeste, and puzzlers like Snake Pass. Let's see where this journey through level design takes me...<br><br>
-					I'd also like to take this time to provide links to a few of my coursemates' websites:<br>
-					<a href="http://straydev.co.uk/" target="_blank"><u>Stephen Rayment</u></a>, <a href="https://andrei203.github.io/" target="_blank"><u>Andrei Barlea</u></a>, <a href="https://b3-kennedy.github.io" target="_blank"><u>Benjamin Kennedy</u></a> and <a href="https://ltucker98.github.io/" target="_blank"><u>Lewis Tucker</u></a>.
-				</p>
-			</div>
-			<div class="blogpost bloguni bloggea">
-				<div class="postheader">
-					<h3 class="posttitle">Blocky Beginnings</h3>
-					<div class="postdate">October 19th, 2020</div>
-				</div>
-				<p class="postcontent">
-					Today, I'm starting my first course project of the year - For my Game Engine Architecture module, 
-					I've been tasked to recreate a game mechanic from a particular game in two separate engines. Given 
-					the choice between Portals (from Portal), Blocky (Minecraft's terrain generation), Marionette (a 
-					physics-based ragdoll system), and Sketch (stylistic rendering system), I chose to pick <b>Blocky.</b><br><br>
-					<img src="https://i.imgur.com/YtDraMh.jpg" width=100%><br><br>
-					This involves procedural generation of blocky terrain and voxel mesh optimisation.<br>
-					Some of the features I want to include in this are:<br>
-					- Generation of surface terrain using 2D Noise<br>
-					- Voxel mesh optimisation to allow it to run smoothly<br>
-					- Generation of cave systems using 3D Noise or otherwise<br>
-					- Inclusion of biomes, where certain areas will have different terrain features<br>
-					- Ability to manually edit terrain without performance losses due to mesh generation<br><br>
-					I will be attempting to create these mechanics in two engines, being Unity (as I have experience using it) 
-					and Godot (as I would like to learn how to use it in the process.)<br><br>
-					To kick things off, I opened Unity and got to work on generating the surface terrain, the first feature of my list.<br>
-					That's the end of this blog post for now, so I'll get back to you later on how it goes...
-				</p>
-			</div>
-			<div class="blogpost bloggeneral">
-				<div class="postheader">
-					<h3 class="posttitle">The Beginning</h3>
-					<div class="postdate">October 14th, 2020</div>
-				</div>
-				<p class="postcontent">
-					It's 7:41pm on a Wednesday right now and here I am, writing a blog post on my new website. 
-					This is mostly just a placeholder post to decide on layout and formatting for future blog posts, 
-					but I think I'll keep it here and use this opportunity to write about what I'm up to right now 
-					- after all, isn't that what a blog is for?<br><br>
-					This is me testing <i>italics</i>, <b>bold text</b> and <u>underlined text</u> with font I'm using.
-					That's Tahoma. I just decided that.<br><br>
-					I've been having a lot of fun making this website. I started making it on the 7th of October, but
-					I just decided on this new style yesterday, using some funky flexboxes and a bunch of colours, 
-					so I've pretty much restarted - not that I had much here beforehand. I hope you like it!<br><br>
-					I opted to be a bit stingy and not use templates or WordPress - web dev can't be that hard to learn, 
-					can it? I did a bit of it years back and it wasn't that hard to pick back up. That does mean that I'll
-					have to write my blog posts into here myself, but maybe I'll make something in JavaScript to make it 
-					easier for me at some point. This is also my first time ever using JavaScript, but it's pretty similar 
-					to everything else. I'm only using it for the button-tab thingies and some hover stuff but maybe one 
-					day I'll add a little easter egg into my website here and there.<br><br>
-					I start with my course content next monday, and I'll be blogging everything I do with my projects 
-					right here. By the end of this week I'd like to be finished with this website, and I'll hopefully make 
-					something in JavaScript that lets you sort through all of these blog posts by topic. It'd be a pain 
-					to go through all of my posts individually, especially if i do end up posting updates regularly.
-				</p>
-			</div>
-		</div>
-	</div>
-	<div class="sectionbutton" id="buttonportfolio" onclick="sectionClick('portfolio')">
-		<div class="sectiontitle">PORTFOLIO</div>
-	</div>
-	<div class="sectioncontent" id="containerportfolio">
-		<div class="contentdisplay" id="contentportfolio">
-			portfolio
-		</div>
-	</div>
-	<div class="sectionbutton" id="buttoncontact" onclick="sectionClick('contact')">
-		<div class="sectiontitle">CONTACT</div>
-	</div>
-	<div class="sectioncontent" id="containercontact">
-		<div class="contentdisplay" id="contentcontact">
-			<div id="contacttitle" onmouseover="contactHover(true)" onmouseleave="contactHover(false)">
-				<div class="contactline"></div>
-				OLI<div class="contacttitlecolored">VER</div><br>HEWI<div class="contacttitlecolored">SON</div><br>
-				<div class="contactline"></div>
-				<div class="contacttext">
-				ME@OLIHEWI.COM
-				<div class="contactline" style="height:0.5vw; margin-top:-1px;"></div><br>
-				<a href="https://discordapp.com/users/107148296715251712">DISCORD</a><br>
-				<a href="https://twitter.com/olihewi" target="_blank">TWITTER</a><br>
-				<a href="https://github.com/olihewi" target="_blank">GITHUB</a><br>
-				<a href="https://www.linkedin.com/in/oliver-hewison-b499181a3/" target="_blank">LINKEDIN</a><br>
-				<a href="https://olihewi.itch.io/" target="_blank">ITCH.IO</a><br><br>
-				<div class="contactline" style="height:0.5vw; margin-top:-1px;"></div>
-			</div>
-			</div>
-			
-		</div>
-	</div>
-</div>
-</body>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
