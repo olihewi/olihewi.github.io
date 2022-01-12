@@ -13,6 +13,23 @@
     <link rel="icon" href="images/favicon.png">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+  <script>
+   function DarkMode()
+   {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    document.getElementById("dark-mode").textContent = document.getElementById("dark-mode").textContent == "Dark Mode" ? "Light Mode" : "Dark Mode";
+   }
+  </script>
+  <style>
+   body{
+    transition: 1.0s ease;
+   }
+   .dark-mode{
+    background-color: black;
+    color: white;
+   }
+  </style>
 	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -28,6 +45,10 @@
                 &nbsp&nbsp&nbsp&nbsp&nbsp
                 <a href="OliverHewison-CV.pdf" class="logo" target="_blank">
                   <span class="title">CV</span>
+                </a>
+                &nbsp&nbsp&nbsp&nbsp&nbsp
+                <a href="#" class="logo" onclick="DarkMode();">
+                  <span class="title" id="dark-mode">Dark Mode</span>
                 </a>
 
 						</div>
@@ -105,7 +126,7 @@
 									<a href="generic.html">
 										<h2>Super Funky Ball</h2>
 										<div class="content">
-											<p>A clone of Super Monkey Ball, built from the scratch in DirectX using C++.<br>Featuring a physics engine, data-driven level loading, and rendering pipeline.<br>Made as part of UWE's Advanced Technologies module.</p>
+											<p>A clone of Super Monkey Ball, built from the scratch in DirectX using C++.<br>Featuring a physics engine, data-driven level loading, and rendering pipeline.<br><br>UWE - Advanced Technologies (year 3)</p>
 										</div>
 									</a>
 								</article>
@@ -116,7 +137,7 @@
 									<a href="generic.html">
 										<h2>Stumble Chums</h2>
 										<div class="content">
-											<p>An Atari-style reimagining of the Jump Club minigame from Fall Guys.<br>Made in Unity with a 5-person team as part of UWE's Commercial Games Development module.</p>
+											<p>An Atari-style reimagining of the Jump Club minigame from Fall Guys.<br>Made in Unity with a 5-person team in 3 weeks.<br><br>UWE - Commercial Games Dev (year 3)</p>
 										</div>
 									</a>
 								</article>
@@ -127,7 +148,7 @@
 									<a href="generic.html">
 										<h2>NetScape</h2>
 										<div class="content">
-											<p>A 4-person multiplayer top-down arena shooter.<br>Made with a 4-person team in a proprietary OpenGL-based engine in C++ as part of UWE's More Games in C++ module.</p>
+											<p>A 4-person multiplayer top-down arena shooter.<br>Made with a 4-person team in a proprietary OpenGL-based engine using C++.<br><br>UWE - More Games in C++ (year 2)</p>
 										</div>
 									</a>
 								</article>
@@ -138,7 +159,7 @@
 									<a href="generic.html">
 										<h2>Super SHMUP Maker</h2>
 										<div class="content">
-											<p>A Data-Driven DirectX game engine, allowing designers to create their own shoot-'em-up games.<br>Made in C++ as part of UWE's Game Engine Programming module with a 3-person team.</p>
+											<p>A Data-Driven DirectX game engine written in C++ with a 3-person team, allowing designers to create their own shoot-'em-up games.<br><br>UWE - Game Engine Programming (year 2)</p>
 										</div>
 									</a>
 								</article>
@@ -149,7 +170,7 @@
 									<a href="generic.html">
 										<h2>Robin Woods and the Clockwork Castle</h2>
 										<div class="content">
-											<p>A prototype board game made with a 4-person team as part of UWE's Play & Games module.</p>
+											<p>A prototype board game made with a 4-person team.<br><br>UWE - Play & Games (year 2)</p>
 										</div>
 									</a>
 								</article>
@@ -160,7 +181,7 @@
 									<a href="generic.html">
 										<h2>Networked Connect Four</h2>
 										<div class="content">
-											<p>An online multiplayer Connect Four game.<br>Made in C++ with a 2-person team as part of UWE's More Games in C++ module.</p>
+											<p>An online multiplayer Connect Four game.<br>Made in C++ with a 2-person team.<br><br>UWE - More Games in C++ (year 2)</p>
 										</div>
 									</a>
 								</article>
@@ -182,7 +203,7 @@
 									<a href="generic.html">
 										<h2>Blocky</h2>
 										<div class="content">
-											<p>A highly data-driven voxel terrain generation framework for Unity.<br>Made as part of UWE's Game Engine Architecture module.</p>
+											<p>A highly data-driven voxel terrain generation framework for Unity.<br><br>UWE - Game Engine Architecture (year 2)</p>
 										</div>
 									</a>
 								</article>
@@ -193,7 +214,7 @@
 									<a href="generic.html">
 										<h2>ASGETrek</h2>
 										<div class="content">
-											<p>A C++ remake of EGA Trek.<br>Made as part of UWE's More Games in C++ module.</p>
+											<p>A C++ remake of EGA Trek.<br><br>UWE - More Games in C++ (year 2)</p>
 										</div>
 									</a>
 								</article>
@@ -204,7 +225,7 @@
 									<a href="generic.html">
 										<h2>Upset Birds</h2>
 										<div class="content">
-											<p>A C++ clone of Angry Birds.<br>Made in a proprietary OpenGL-based engine for UWE's Entertainment Software Development module.</p>
+											<p>A clone of Angry Birds.<br>Made in a proprietary OpenGL-based engine in C++<br><br>UWE - Games in C++ (year 1)</p>
 										</div>
 									</a>
 								</article>
@@ -226,7 +247,7 @@
 									<a href="generic.html">
 										<h2>Ping</h2>
 										<div class="content">
-											<p>My first C++ game, a clone of Pong.<br>Made in a proprietary OpenGL-based engine for UWE's Entertainment Software Development module.</p>
+											<p>My first C++ game, a clone of Pong.<br>Made in a proprietary OpenGL-based engine in C++<br><br>UWE - Games in C++ (year 1)</p>
 										</div>
 									</a>
 								</article>
