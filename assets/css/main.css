@@ -208,8 +208,11 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 1.1em;
+		font-size: 1.2em;
 	}
+  .tiles h2 {
+    -webkit-text-stroke: 1px black;
+  }
 
 	h3 {
 		font-size: 1em;

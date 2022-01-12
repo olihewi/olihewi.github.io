@@ -18,16 +18,21 @@
    {
     var element = document.body;
     element.classList.toggle("dark-mode");
-    document.getElementById("dark-mode").textContent = document.getElementById("dark-mode").textContent == "Dark Mode" ? "Light Mode" : "Dark Mode";
    }
   </script>
   <style>
+   html{
+    scroll-behavior: smooth;
+   }
    body{
     transition: 1.0s ease;
    }
    .dark-mode{
     background-color: black;
     color: white;
+   }
+   .dark-mode #footer{
+    background-color: #202020;
    }
   </style>
 	<body class="is-preload">
@@ -42,13 +47,17 @@
 								<a href="index.html" class="logo">
 									<span class="symbol"><img src="images/profile.png" alt="" /></span><span class="title">Portfolio</span>
 								</a>
-                &nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp
                 <a href="OliverHewison-CV.pdf" class="logo" target="_blank">
                   <span class="title">CV</span>
                 </a>
-                &nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp
+                <a href="#contact" class="logo">
+                  <span class="title">Contact</span>
+                </a>
+                &nbsp&nbsp
                 <a href="#" class="logo" onclick="DarkMode();">
-                  <span class="title" id="dark-mode">Dark Mode</span>
+                  <span class="title" id="dark-mode">●</span>
                 </a>
 
 						</div>
@@ -101,10 +110,10 @@
 									<span class="image">
 										<img src="images/portfolio/a_remembering.jpg" alt="" />
 									</span>
-									<a href="generic.html">
+									<a href="https://www.youtube.com/watch?v=cBxE5kRGfxo" target="_blank">
 										<h2>A Remembering</h2>
 										<div class="content">
-											<p>A short film exploring the theme of dementia.<br><br>UWE - Audio-Visual Studio (year 3)</p>
+											<p>A short film exploring the fleeting nature of experience.<br><br>UWE - Audio-Visual Studio (year 3)</p>
 										</div>
 									</a>
 								</article>
@@ -270,35 +279,13 @@
 					<footer id="footer">
 						<div class="inner">
 							<section>
-								<h2>Get in touch</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="field">
-											<textarea name="message" id="message" placeholder="Message"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" /></li>
-									</ul>
-								</form>
-							</section>
-							<section>
+                <a name="contact"></a>
 								<h2>Contact</h2>
 								<ul class="icons">
-									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://www.linkedin.com/in/olihewi/" class="icon brands style2 fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://twitter.com/olihewi" class="icon brands style2 fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+									<li><a href="mailto:hewisonoliver@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://github.com/olihewi" class="icon brands style2 fa-github" target="_blank"><span class="label">GitHub</span></a></li>
 								</ul>
 							</section>
 							<ul class="copyright">
