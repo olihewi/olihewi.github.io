@@ -211,6 +211,7 @@ input, select, textarea {
 		font-size: 1.2em;
 	}
   .tiles h2 {
+	  transition: 1.0s ease;
     -webkit-text-stroke: 1px black;
   }
 
@@ -3309,3 +3310,21 @@ input, select, textarea {
 			}
 
 		}
+		
+   html{
+    scroll-behavior: smooth;
+   }
+   body{
+    transition: 1.0s ease;
+   }
+   .dark-mode{
+    background-color: black;
+    color: white;
+   }
+   .dark-mode #footer{
+    background-color: #202020;
+   }
+   .dark-mode .tiles h2{
+	   color: black;
+		-webkit-text-stroke: 1px white;
+   }
