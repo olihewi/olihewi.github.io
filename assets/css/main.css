@@ -198,7 +198,7 @@ input, select, textarea {
 	h2, h3, h4, h5, h6 {
 		font-weight: 900;
 		line-height: 1.5;
-		margin: 0 0 2em 0;
+		margin: 0 0 0 0;
 		text-transform: uppercase;
 		letter-spacing: 0.35em;
 	}
@@ -2577,7 +2577,7 @@ input, select, textarea {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		postiion: relative;
-		margin: -2.5em 0 0 -2.5em;
+		margin: -1em 0 2em -2em;
 	}
 
 		.tiles article {
@@ -2737,9 +2737,9 @@ input, select, textarea {
 		/* + .tiles {
 			margin-top: 2em;
 		}*/
-    .tiles + * {
-      margin-top: 2em;
-    }
+    /* + .tiles {
+      margin-bottom: 2em;
+    }*/
 
 		body.is-preload .tiles article {
 			-moz-transform: scale(0.9);
@@ -3330,4 +3330,7 @@ input, select, textarea {
    .dark-mode .tiles h2{
 	   color: black;
 		-webkit-text-stroke: 1px white;
+   }
+   .dark-mode a {
+     color:white;
    }
