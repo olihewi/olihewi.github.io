@@ -2734,9 +2734,12 @@ input, select, textarea {
 				opacity: 1;
 			}
 
-		* + .tiles {
+		/* + .tiles {
 			margin-top: 2em;
-		}
+		}*/
+    .tiles + * {
+      margin-top: 2em;
+    }
 
 		body.is-preload .tiles article {
 			-moz-transform: scale(0.9);
